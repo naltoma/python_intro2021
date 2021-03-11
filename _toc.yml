@@ -1,0 +1,14 @@
+- file: Readme.md
+
+- part: 授業環境
+  chapters:
+  - file: environment.md
+
+- part: Python入門
+  numbered: true
+  chapters:
+  - file: week1.md
+
+- part: 課題
+  chapters:
+  - file: report/report1_print_variable_terms.md
