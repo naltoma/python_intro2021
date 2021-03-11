@@ -254,6 +254,10 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
   - 想像と異なる動作をした場合、それは学びを得るチャンス！　要因を調査しよう。
 
 ---
+## 振り返り
+![まとめ](./figs/w1-summary.pdf)
+
+---
 ## 復習
 - 復習: 教科書読み
   - 1章　＊概要掴むぐらい（30分程度）でok

@@ -8,3 +8,9 @@
   - デバッグ演習
   - Jupyter
   - Git
+- 関連リンク
+  - 1週目
+    - 教科書: [Introduction to Computation and Programming Using Python: With Applications and Understanding Data](https://www.amazon.co.jp/Introduction-Computation-Programming-Using-Python/dp/0262529629)
+    - [来たるべき、「みんな」のコードのために：平成4年生まれがつくるプログラマーの学校](http://wired.jp/2016/03/04/kusano-teacher/)
+    - [20歳を過ぎてからプログラミングを学ぼうと決めた人たちへ](http://www.slideshare.net/ShuUesugi/20-9290892)
+    - [progate](https://prog-8.com/)　＊独習サイト
