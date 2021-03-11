@@ -28,7 +28,7 @@ which python # ~/.venv/bin/python 想定
 ---
 ### 2〜3週目以降
 - VSCode
-  - PDF: [VSCodeのインストールから実行まで](./vscode.pdf)
+  - PDF: <a href="http://ie.u-ryukyu.ac.jp/~tnal/2021/prog1/vscode.pdf" target="_blank">VSCodeのインストールから実行まで</a>
 - 再履修生は PyCharm 等使いたいものを使ってOK。
 
 ```{note}
