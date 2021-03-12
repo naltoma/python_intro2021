@@ -1,13 +1,24 @@
 - file: Readme.md
 
 - part: 授業環境
+  numbered: true
   chapters:
   - file: environment.md
+  - file: exercise/howto.md
 
 - part: Python入門
   numbered: true
   chapters:
   - file: week1.md
+  - file: week2.md
+
+- part: モブプロ演習
+  numbered: true
+  chapters:
+  - file: exercise/ex1.md
+  - file: exercise/ex2.md
+  - file: exercise/ex3.md
+  - file: exercise/ex4.md
 
 - part: 課題
   chapters:
