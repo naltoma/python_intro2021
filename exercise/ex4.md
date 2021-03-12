@@ -6,12 +6,35 @@
 - 補足
   - レポートには、print()関数について説明している箇所冒頭数行程度を掲載し、分かったこと、分からないことについて言及せよ。
 
+`````{admonition} 補足
+````{dropdown} 回答例
+```python
+help(print)
+Help on built-in function print in module builtins:
+
+print(...)
+    print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+
+    Prints the values to a stream, or to sys.stdout by default.
+```
+引数sepやendについて他の値を設定して実行してみよう。
+````
+`````
+
 ---
 ## ドキュメントの活用
 - 作業内容
   - ``print('hoge', 'fuga', 'piga')`` を実行すると、それぞれの要素が「スペースで連結された文字列」として出力されるはずだ。ことのことについて、help()コマンドもしくは公式ドキュメントではどのように説明しているだろうか。該当箇所を探し出せ。
 - 補足
   - レポートには、説明している箇所をコピペすること。
+
+`````{admonition} 補足
+````{dropdown} 回答例
+```
+sep:   string inserted between values, default a space.
+```
+````
+`````
 
 ---
 ## ドキュメントを踏まえたコード作成
@@ -20,6 +43,14 @@
   - 実現したコードを「ex4_3.py」というファイル名で保存し、シェル上で実行せよ。
 - 補足
   - レポートには、シェル上で実行する様子と、実行結果を掲載すること。（演習4.2までと同じインタプリタ上ではないことに注意）
+
+`````{admonition} 補足
+````{dropdown} 回答例
+```python
+print('hoge','fuga','piga',sep='')
+```
+````
+`````
 
 ---
 ## 余裕があるグループ向けのおまけ
