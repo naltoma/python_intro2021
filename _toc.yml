@@ -11,6 +11,7 @@
   chapters:
   - file: week1.md
   - file: week2.md
+  - file: branching.md
 
 - part: モブプロ演習
   numbered: true
