@@ -11,7 +11,13 @@
   chapters:
   - file: week1.md
   - file: week2.md
+  - file: function1.md
   - file: branching.md
+  - file: looping.md
+
+- part: 課題
+  chapters:
+  - file: report/report1_print_variable_terms.md
 
 - part: モブプロ演習
   numbered: true
@@ -20,7 +26,3 @@
   - file: exercise/ex2.md
   - file: exercise/ex3.md
   - file: exercise/ex4.md
-
-- part: 課題
-  chapters:
-  - file: report/report1_print_variable_terms.md

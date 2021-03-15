@@ -1,4 +1,4 @@
-# 演習3: 数値演算とブーリアンの利用
+# 演習3: ブーリアンと文字列処理
 
 ## グループ分けをしたい
 - 背景
@@ -60,6 +60,87 @@ if 40 < target:
 
 if 60 < target:
     print("グループ4")
+```
+````
+`````
+
+---
+## 全員を複数のグループに分けたい
+- 背景
+  - 先程は「あなたの学籍番号に対して所属グループを出力するプログラム」を書いた。これだとその一人のことしか分からなくて不便だ。まとめて一覧表示させたい。
+- 作業内容
+  - 今年度の受講生は 215701〜215760 だと仮定する。この60人分の所属を出力するプログラムを書け。
+  - なお ``make_group(215701, 215760)`` として実行できる関数として記述せよ。
+
+`````{admonition} 補足
+```python
+#実行イメージ
+>>> make_group(215701, 215760)
+215701 グループ1
+215702 グループ1
+215703 グループ1
+(略)
+215760 グループ3
+```
+
+````{dropdown} 回答例
+```python
+def make_group(begin, end):
+    for student_account in range(begin, end+1):
+        target = student_account % 100
+        if 0 < target <= 20:
+            print(student_account, 'グループ1')
+        elif 20 < target <= 40:
+            print(student_account, 'グループ2')
+        elif 40 < target <= 60:
+            print(student_account, 'グループ3')
+        else:
+            print(student_account, 'グループ4')
+
+# 動作確認
+make_group(215701, 215760)
+```
+````
+`````
+
+---
+## 全員をアカウント名にして複数のグループに分けたい
+- 背景
+  - 先程は「今年度の受講生60人分の所属グループを出力するプログラム」を書いた。数字のままでは学内で利用しているアカウントとは異なるため不便だ。アカウントに変換したい。
+- 作業内容
+  - 先程の一覧をアカウントで出力するプログラムを書け。
+  - なお ``make_group(215701, 215760)`` として実行できる関数として記述せよ。
+
+`````{admonition} 補足
+```python
+#実行イメージ
+>>> make_group(215701, 215760)
+e215701 グループ1
+e215702 グループ1
+e215703 グループ1
+(略)
+e215760 グループ3
+```
+
+````{dropdown} 回答例
+```python
+# 例
+def make_group(begin, end):
+    for student_account in range(begin, end+1):
+        target = student_account % 100
+        student_account = 'e' + str(student_account)
+        if 0 < target <= 20:
+            print(student_account, 'グループ1')
+        elif 20 < target <= 40:
+            print(student_account, 'グループ2')
+        elif 40 < target <= 60:
+            print(student_account, 'グループ3')
+        else:
+            print(student_account, 'グループ4')
+
+# 動作確認
+make_group(215701, 215760)
+
 ```
 ````
 `````
