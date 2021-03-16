@@ -10,6 +10,7 @@
 - 大学院生TA（Teaching Assistant）によるサポート。
 - オンライン配信は録画しておくので、後日閲覧可能。
 - メッセージングアプリ Mattermost による周知、相談対応。
+- [お便りコーナー](https://docs.google.com/forms/d/e/1FAIpQLScA5N4Or3V-SJH6o0Qvs6M58PnpyhdQWbduiGS46sHJFd7n3w/viewform?usp=sf_link)による相談対応。
 
 ---
 ## 資料のレイアウト

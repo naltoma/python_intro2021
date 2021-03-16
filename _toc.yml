@@ -18,6 +18,7 @@
 - part: 課題
   chapters:
   - file: report/report1_print_variable_terms.md
+  - file: report/report2_branching_function.md
 
 - part: モブプロ演習
   numbered: true
