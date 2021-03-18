@@ -71,6 +71,22 @@ welcome('牧瀬紅莉栖')
 ```
 ````
 
+`````{admonition} 検討
+変数xを入力したら $2x^2 + 1$ の算出結果を返す関数を実装してみよう。関数名を equation とする。
+````{dropdown} 回答例
+```python
+def equation(x):
+    return 2 * x**2 + 1
+
+#動作確認
+print(equation(0))
+print(equation(1))
+print(equation(2))
+print(equation(3))
+```
+````
+`````
+
 ---
 ## 関数を実行する様子
 ![関数を実行する様子](./figs/function2.pdf)

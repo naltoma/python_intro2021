@@ -19,6 +19,7 @@
   chapters:
   - file: report/report1_print_variable_terms.md
   - file: report/report2_branching_function.md
+  - file: report/report3_iteration.md
 
 - part: モブプロ演習
   numbered: true

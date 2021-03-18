@@ -10,6 +10,8 @@
 - 大学院生TA（Teaching Assistant）によるサポート。
 - オンライン配信は録画しておくので、後日閲覧可能。
 - メッセージングアプリ Mattermost による周知、相談対応。
+- [モブ・プログラミング](./exercise/howto)
+  - コロナ対応のため、実施方法検討中。
 - [お便りコーナー](https://docs.google.com/forms/d/e/1FAIpQLScA5N4Or3V-SJH6o0Qvs6M58PnpyhdQWbduiGS46sHJFd7n3w/viewform?usp=sf_link)による相談対応。
 
 ---
@@ -37,8 +39,9 @@
 ---
 ## 開発環境
 ### 冒頭1〜2週目の環境
+- macOS: 10.15以降想定。
 - ターミナル.app
-- Python 3.8系想定。恐らく3.9系でも問題ない。
+- Python: 3.8系想定。恐らく3.9系でも問題ない。
 - テキストエディタ: [ATOM](https://atom.io)
 - パッケージ管理ツール: pip予定
 - 設定手順
@@ -47,6 +50,8 @@ which python3 # /usr/bin/python3 想定
 python3 -m venv ~/.venv/prog1
 source ~/.venv/prog1/bin/activate
 which python # ~/.venv/bin/python 想定
+pip install --upgrade pip
+pip install numpy matplotlib jupyterlab
 ```
 
 ---
