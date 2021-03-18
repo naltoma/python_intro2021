@@ -1,10 +1,7 @@
 # 全体像, ターミナル, VSCode, Mattermost
 
 ## 全体像
-- Zoom によるリアルタイムオンライン配信 ＋ 半分来室による並行実施。
-  - 1週目: 学籍番号奇数組が来訪可能（強制ではありません）
-  - 2週目: 偶数組が来訪可能
-  - 3週目以降繰り返し
+- Zoom によるリアルタイムオンライン配信 ＋ 来室による並行実施。
   - **体調不良時には理由を問わず来訪せず、休息かオンライン参加ください。**
 - 時間の取れるタイミングでグループ演習（通称モブプログラミング）。
 - 大学院生TA（Teaching Assistant）によるサポート。
@@ -58,6 +55,7 @@ pip install numpy matplotlib jupyterlab
 ### 2〜3週目以降
 - VSCode
   - PDF: <a href="http://ie.u-ryukyu.ac.jp/~tnal/2021/prog1/vscode.pdf" target="_blank">VSCodeのインストールから実行まで</a>
+  - [デバッグ](./debug)
 - 再履修生は PyCharm 等使いたいものを使ってOK。
 
 ```{note}
