@@ -16,12 +16,15 @@
   - file: branching.md
   - file: looping.md
   - file: summary1.md
+  - file: sequence-str-list-tuple.md
+  - file: unsequence-dict-set.md
 
 - part: 課題
   chapters:
   - file: report/report1_print_variable_terms.md
   - file: report/report2_branching_function.md
   - file: report/report3_iteration.md
+  - file: report/report4_list_dict_nlp.md
 
 - part: モブプロ演習
   numbered: true
