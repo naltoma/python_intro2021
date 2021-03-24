@@ -30,8 +30,8 @@ list, tuple, dict等と同様だが、すべての操作を覚えておく必要
 ---
 ### 集合操作
 ```python
-# 空の集合を用意。
-# {}では辞書型とみなされるため、set関数を使う。
+>>> # 空の集合を用意。
+>>> # {}では辞書型とみなされるため、set関数を使う。
 >>> data = set()
 >>> len(data)
 0
@@ -40,25 +40,25 @@ list, tuple, dict等と同様だが、すべての操作を覚えておく必要
 >>> data
 set()
 
-# 集合に要素を追加。
+>>> # 集合に要素を追加。
 >>> data.add(1)
 >>> data.add(3)
 >>> data.add(-1)
 >>> data
 {1, 3, -1}
 
-# 集合から要素を削除。
+>>> # 集合から要素を削除。
 >>> data.remove(1)
 >>> data
 {3, -1}
 
-# 存在しない要素を削除しようとすると KeyError になる。
+>>> # 存在しない要素を削除しようとすると KeyError になる。
 >>> data.remove(-100)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: -100
 
-# 和集合
+>>> # 和集合
 >>> data1 = {10, 20, 30}
 >>> data2 = {20, 30, 40}
 >>> data3 = {30, 40, 50}
@@ -67,13 +67,13 @@ KeyError: -100
 >>> data1 | data2 | data3
 {50, 20, 40, 10, 30}
 
-# 積集合
+>>> # 積集合
 >>> data1 & data2
 {20, 30}
 >>> data1 & data2 & data3
 {30}
 
-# 差集合
+>>> # 差集合
 >>> data1 - data2
 {10}
 >>> data1 - data2 - data3
@@ -81,7 +81,7 @@ KeyError: -100
 >>> data2 - data3
 {20}
 
-# 部分集合の判定
+>>> # 部分集合の判定
 >>> small = {10, 20}
 >>> small < data1
 True

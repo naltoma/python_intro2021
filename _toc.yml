@@ -18,6 +18,10 @@
   - file: summary1.md
   - file: sequence-str-list-tuple.md
   - file: unsequence-dict-set.md
+  - file: fileio.md
+  - file: type_hinting.md
+  - file: docstring.md
+  - file: doctest.md
 
 - part: 課題
   chapters:
@@ -25,6 +29,7 @@
   - file: report/report2_branching_function.md
   - file: report/report3_iteration.md
   - file: report/report4_list_dict_nlp.md
+  - file: report/report5_list_dict_nlp2.md
 
 - part: モブプロ演習
   numbered: true
