@@ -22,6 +22,10 @@
   - file: type_hinting.md
   - file: docstring.md
   - file: doctest.md
+  - file: function2.md
+  - file: summary2.md
+  - file: jupyter-lab.md
+  - file: numpy.md
 
 - part: 課題
   chapters:

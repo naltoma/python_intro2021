@@ -244,3 +244,12 @@ Got:
   - `` 3`` を ``3`` に修正しよう。（スペースを削除しよう）
 - テスト実行。
   - 今回は全てのテストが通るはずだ。
+
+---
+## 復習・予習
+- 復習
+  - 適宜過去資料及び教科書を参照しよう。
+- 予習
+  - 4.1.2 Keyword Arguments and Decault Values
+  - 4.1.3 Scoping
+  - 5.3 Lists and Mutability
