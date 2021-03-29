@@ -26,6 +26,8 @@
   - file: summary2.md
   - file: jupyter-lab.md
   - file: numpy.md
+  - file: debug-howto.md
+  - file: module.md
 
 - part: 課題
   chapters:
@@ -34,6 +36,7 @@
   - file: report/report3_iteration.md
   - file: report/report4_list_dict_nlp.md
   - file: report/report5_list_dict_nlp2.md
+  - file: report/report6_reading_debug.md
 
 - part: モブプロ演習
   numbered: true

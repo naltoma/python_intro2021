@@ -20,7 +20,7 @@
 ## サンプルを試してみる
 - ``~/prog1/`` に移動し、サンプルファイルをダウンロード。
 ```
-curl -O https://ie.u-ryukyu.ac.jp/~tnal/2016/prog1/jupyter_example.ipynb -O
+curl -O https://github.com/naltoma/python_intro2021/raw/main/assets/samples/jupyter_example.ipynb -O
 ```
 
 - JupyterLabの起動。
