@@ -28,6 +28,9 @@
   - file: numpy.md
   - file: debug-howto.md
   - file: module.md
+  - file: float.md
+  - file: function_recursive_call.md
+  - file: exception_assertion.md
 
 - part: 課題
   chapters:
@@ -37,6 +40,7 @@
   - file: report/report4_list_dict_nlp.md
   - file: report/report5_list_dict_nlp2.md
   - file: report/report6_reading_debug.md
+  - file: report/report7_search.md
 
 - part: モブプロ演習
   numbered: true
