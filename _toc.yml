@@ -31,6 +31,8 @@
   - file: float.md
   - file: function_recursive_call.md
   - file: exception_assertion.md
+  - file: git.md
+  - file: after_this_class.md
 
 - part: 課題
   chapters:
