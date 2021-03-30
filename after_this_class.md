@@ -15,6 +15,7 @@
     - 「機械学習」に興味あるなら
       - [Pythonで動かして学ぶ！ あたらしい機械学習の教科書](https://www.shoeisha.co.jp/book/detail/9784798144986)　＊正誤表も参照。
       - [scikit-learn: Machine Learning in Python](http://scikit-learn.org/stable/)
+- [Python言語による実務で使える100の最適化問題](https://mikiokubo.github.io/opt100/)
 
 ---
 ## それ以外
