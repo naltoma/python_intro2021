@@ -28,7 +28,7 @@
 # init_vending_machine関数をインタプリタ上で実行する様子を示している。
 # 第1引数は10円玉の枚数、第2引数は100円玉の枚数として設定した。
 # 戻り値の1番目は10円玉の枚数、2番目は100円玉の枚数として設定した。
->>> coins10, coins100 = init_vending_machine()
+>>> coins10, coins100 = init_vending_machine(3, 4)
 >>> print(coins10, coins100)
 3, 4
 ```
@@ -55,17 +55,17 @@
 # 戻り値の1つ目・2つ目は自動販売機が保有する10円玉の枚数、100円玉の枚数とした。
 # 戻り地の3つ目は顧客が投入した金額合計とした。
 >>> #例1
->>> coins10, coins100 = init_vending_machine()
+>>> coins10, coins100 = init_vending_machine(3, 4)
 >>> user_coins10, user_coins100, user_total = input_process(0, 1)
 >>> print(user_coins10, user_coins100, user_total)
 0 1 100
 >>> #例2
->>> coins10, coins100 = init_vending_machine()
+>>> coins10, coins100 = init_vending_machine(3, 4)
 >>> user_coins10, user_coins100, user_total = input_process(1, 1)
 >>> print(user_coins10, user_coins100, user_total)
 1 1 110
 >>> #例3
->>> coins10, coins100 = init_vending_machine()
+>>> coins10, coins100 = init_vending_machine(3, 4)
 >>> user_coins10, user_coins100, user_total = input_process(0, 2)
 >>> print(user_coins10, user_coins100, user_total)
 0 2 200
@@ -96,19 +96,19 @@
 # 第3,4引数は顧客が投入した10円玉,100円玉の枚数。
 # 第5引数は投入金額。第6引数は選択した商品の金額。
 # 戻り値の1番目は購入可否。2,3番目は返却する10円玉,100円玉の枚数。
->>> coins10, coins100 = init_vending_machine()
+>>> coins10, coins100 = init_vending_machine(3, 4)
 >>> user_coins10, user_coins100, user_total = input_process(0, 1)
 >>> is_possible, return_coins10, return_coins100 = can_buy(coins10, coins100, user_coins10, user_coins100, user_total, 160)
 >>> print(is_possible, return_coins10, return_coins100)
 False 0 1
 >>> # 例2
->>> coins10, coins100 = init_vending_machine()
+>>> coins10, coins100 = init_vending_machine(3, 4)
 >>> user_coins10, user_coins100, user_total = input_process(1, 1)
 >>> is_possible, return_coins10, return_coins100 = can_buy(coins10, coins100, user_coins10, user_coins100, user_total, 110)
 >>> print(is_possible, return_coins10, return_coins100)
 True 0 0
 >>> #例3
->>> coins10, coins100 = init_vending_machine()
+>>> coins10, coins100 = init_vending_machine(3, 4)
 >>> user_coins10, user_coins100, user_total = input_process(0, 2)
 >>> is_possible, return_coins10, return_coins100 = can_buy(coins10, coins100, user_coins10, user_coins100, user_total, 160)
 >>> print(is_possible, return_coins10, return_coins100)
