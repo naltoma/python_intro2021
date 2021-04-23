@@ -121,7 +121,7 @@ return文で **複数の値をカンマ区切りで列挙** することで複�
 ```python
 def add_vector(vect1_1, vect1_2, vect2_1, vect2_2):
     result1 = vect1_1 + vect2_1
-    result2 = vect2_1 + vect2_2
+    result2 = vect1_2 + vect2_2
     return result1, result2
 
 result1_1, result1_2 = add_vector(1, 2, 3, 4)
