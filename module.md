@@ -1,6 +1,6 @@
 # モジュールの利用
 ## モジュールとは何か
-![モジュール](./figs/modules.pdf)
+![モジュール](./figs/modules.svg)
 
 - [公式ドキュメント](https://github.com/naltoma/python_demo_module)
   - 要約

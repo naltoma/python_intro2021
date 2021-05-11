@@ -83,7 +83,7 @@ VSCodeを起動し、適当な作業用ディレクトリ（例えば ~/prog1/�
 
 ---
 ### 実行継続方法の確認
-![デバッグメニュー](./figs/debug-operator.pdf)
+![デバッグメニュー](./figs/debug-operator.svg)
 
 一時停止している状態から実行継続する方法にはいくつかの種類がある。
 - Continue

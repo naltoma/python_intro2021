@@ -53,7 +53,7 @@ str, list, tupleに関するすべての操作を覚えておく必要はない�
 
 ---
 ### インデックス参照補足、スライス処理
-![インデックス参照補足、スライス処理](./figs/sequence-index-slicing.pdf)
+![インデックス参照補足、スライス処理](./figs/sequence-index-slicing.svg)
 
 インデックスを指定する際、Python特有の書式が2つある。
 
