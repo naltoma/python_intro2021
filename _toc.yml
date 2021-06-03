@@ -20,7 +20,7 @@
   - file: unsequence-dict-set.md
   - file: fileio.md
   - file: type_hinting.md
-  - file: docstring.md
+  - file: docstring_basic.md
   - file: doctest.md
   - file: function2.md
   - file: summary2.md
