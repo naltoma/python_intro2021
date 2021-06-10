@@ -110,9 +110,8 @@ This module supplies one function, add(). For example,
 >>> add(1, 2)
  3
 """
-from typing import Union
 
-def add(arg1: Union[int, float], arg2: Union[int, float]) -> Union[int, float]:
+def add(arg1, arg2):
     """Return the added value for arg1 and arg2.
 
     Args:
