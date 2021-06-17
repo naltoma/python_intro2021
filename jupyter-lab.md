@@ -10,17 +10,17 @@
 
 ---
 ## インストール
-- 2021年度学生
+- 2021年度学生（事前に動作確認した人は不要）
   - ``source ~/.venv/prog1/bin/activate``
   - ``pip install jupyterlab``
-- Minicondaの人 (2020年度学生)
+- Minicondaの人 (2020年度学生。去年インストール済みのはず)
   - ``conda install -c conda-forge jupyterlab``
 
 ---
 ## サンプルを試してみる
 - ``~/prog1/`` に移動し、サンプルファイルをダウンロード。
 ```
-curl -O https://github.com/naltoma/python_intro2021/raw/main/assets/samples/jupyter_example.ipynb -O
+curl -O https://ie.u-ryukyu.ac.jp/~tnal/2021/prog1/static/samples/jupyter_example.ipynb
 ```
 
 - JupyterLabの起動。

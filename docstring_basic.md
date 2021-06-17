@@ -53,8 +53,8 @@ for score in scores:
 - 手順1：コードの準備。
   - 上記コードを eval.py として保存。
 - 手順2：ドキュメント生成＆参照。（docstring書く前の状態を確認）
-  - ``pydoc -w averaging``
-  - ``open averaging.html``
+  - ``pydoc -w eval``
+  - ``open eval.html``
 - 手順3: 文字コードを記載。
   - 1行目に ``# -*- coding: utf-8 -*-`` と書く。
   - macOS標準のドキュメント生成コマンド pydoc が古いための対応。Python3用のpydoc3ならこの記載は不要。
