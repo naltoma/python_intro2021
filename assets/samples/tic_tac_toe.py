@@ -40,11 +40,11 @@ Example:
         % python tic_tac_toe.py
 """
 
-from typing import List
+from __future__ import print_function
 import random
 
 
-def init_board() -> List[str]:
+def init_board():
     """Return the empty board.
 
     Args:
@@ -66,7 +66,7 @@ def init_board() -> List[str]:
     return board
 
 
-def print_board(board: List[str]):
+def print_board(board):
     """Print the board with 3x3.
 
     Args:
@@ -89,11 +89,10 @@ def print_board(board: List[str]):
             print('{0}'.format(state))
         else:
             print('{0}'.format(state), end='')
-
     print('---')
 
 
-def gather_empty_cells(board: List[str]) -> List[int]:
+def gather_empty_cells(board):
     """Gather empty cells on the board.
 
     Args:
@@ -119,7 +118,7 @@ def gather_empty_cells(board: List[str]) -> List[int]:
     return empty_list
 
 
-def point_random(board: List[str], player: str) -> int:
+def point_random(board, player):
     """Play one step randomly.
 
     Args:
