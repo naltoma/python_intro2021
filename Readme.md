@@ -1,7 +1,7 @@
 # プログラミング1
 - 琉大知能情報コース
-  - [2021年度「プログラミング1」](https://ie.u-ryukyu.ac.jp/~tnal/2021/prog1/)
-  - [JupyterBook版](http://ie.u-ryukyu.ac.jp/~tnal/2021/prog1/static/)
+  - [2022年度「プログラミング1」](https://ie.u-ryukyu.ac.jp/~tnal/2022/prog1/)
+  - [JupyterBook版](http://ie.u-ryukyu.ac.jp/~tnal/2022/prog1/static/)
 - 想定対象
   - プログラミング触ったこと無い大学1年生。
 - 主な内容

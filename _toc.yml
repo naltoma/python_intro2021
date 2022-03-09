@@ -1,12 +1,12 @@
-- file: Readme.md
-
-- part: 授業環境
+format: jb-book
+root: Readme.md
+parts:
+- caption: "授業環境"
   numbered: true
   chapters:
   - file: environment.md
   - file: exercise/howto.md
-
-- part: Python入門
+- caption: "Python入門"
   numbered: true
   chapters:
   - file: week1.md
@@ -33,8 +33,7 @@
   - file: exception_assertion.md
   - file: git.md
   - file: after_this_class.md
-
-- part: 課題
+- caption: "課題"
   chapters:
   - file: report/report1_print_variable_terms.md
   - file: report/report2_branching_function.md
@@ -43,8 +42,7 @@
   - file: report/report5_list_dict_nlp2.md
   - file: report/report6_reading_debug.md
   - file: report/report7_search.md
-
-- part: モブプロ演習
+- caption: "モブプロ演習"
   numbered: true
   chapters:
   - file: exercise/ex1.md

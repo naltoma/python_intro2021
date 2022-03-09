@@ -9,7 +9,6 @@
 - メッセージングアプリ Mattermost による周知、相談対応。
 - [モブ・プログラミング](./exercise/howto)
   - コロナ対応のため、実施方法検討中。
-- [お便りコーナー](https://docs.google.com/forms/d/e/1FAIpQLScA5N4Or3V-SJH6o0Qvs6M58PnpyhdQWbduiGS46sHJFd7n3w/viewform?usp=sf_link)による相談対応。
 
 ---
 ## 資料のレイアウト
@@ -40,25 +39,41 @@
 ---
 ## 開発環境
 ### 冒頭1〜2週目の環境
-- macOS: 10.15以降想定。
+- macOS: 12.x以降想定。@ 2022.3.7
+  - 恐らく 11.x系でも問題ない。
 - ターミナル.app
-- Python: 3.8系想定。恐らく3.9系でも問題ない。
-- テキストエディタ: [ATOM](https://atom.io)
-- パッケージ管理ツール: pip予定
-- 設定手順
-```shell
-which python3 # /usr/bin/python3 想定
-python3 -m venv ~/.venv/prog1
-source ~/.venv/prog1/bin/activate
-which python # ~/.venv/bin/python 想定
-pip install --upgrade pip
-pip install numpy matplotlib jupyterlab
-```
+- Python: 3.9系想定。恐らく3.8系でも問題ない。
+- (参考)テキストエディタ: [ATOM](https://atom.io)
+  - テキストエディタは他アプリでもOK。テキストエディタが何なのか分からない人はATOMインストールしよう。
+- パッケージ管理ツール: conda (miniconda)
+  - インストール手順
+    - [Mniconda](https://docs.conda.io/en/latest/miniconda.html)からインストール用スクリプトをダウンロード。macOSなら「macOS installers」から選択。
+      - Python version: ``Python 3.8``
+      - Name: ``Miniconda3 macOS Apple M1 ARM 64-bit bash``
+    - ターミナルを起動し、ダウンロードしたスクリプトを実行。以下は実行例。ファイル名は自身がダウンロードしたファイル名に修正すること。
+      - ``bash ~/Downloads/Miniconda3-py38_4.10.1-MacOSX-arm64``
+      - 途中で何度か質問されるので適切に答えよう。
+        - 確認1: In order to continue the installation process, please review the license agreement. Please, press ENTER to continue
+          - ENTERキー押そう。
+        - 確認2: End User License Agreement - Miniconda
+          - ライセンスの中身を確認する画面。問題ないので閉じるために ``q`` を入力しよう。
+        - 確認3: Do you accept the license terms? [yes|no]
+          - ライセンスを受け入れるかの確認。``yes``
+        - 確認4: Miniconda3 will now be installed into this location: /Users/tnal/miniconda3
+          - minicondaのインストール先を確認。実行ユーザのホームディレクトリにminiconda3というディレクトリを作成し、そこにインストールするようになっている。このままで良いので、ENTERキーを押そう。
+        - 確認5: Do you wish the installer to initialize Miniconda3 by running conda init? [yes|no]
+          - conda環境初期化を実行することを確認している。``yes``。
+        - 確認6: ==> For changes to take effect, close and re-open your current shell. <==
+          - conda環境をアクティブにするために、ターミナルを再起動しよう。これでminicondaのインストールが終了。
+  - condaに追加パッケージのインストール。
+    - ターミナル上で以下を実行。
+      - ``conda install numpy matplotlib jupyterlab``
+      - 途中で ``Proceed ([y]/n)?`` と確認されるので、``y`` と入力するか、単にEnterキーを押そう。
 
 ---
 ### 2〜3週目以降
 - VSCode
-  - PDF: <a href="http://ie.u-ryukyu.ac.jp/~tnal/2021/prog1/vscode.pdf" target="_blank">VSCodeのインストールから実行まで</a>
+  - PDF: <a href="http://ie.u-ryukyu.ac.jp/~tnal/2022/prog1/vscode2022.pdf" target="_blank">VSCodeのインストールから実行まで</a>
   - [デバッグ](./debug)
 - 再履修生は PyCharm 等使いたいものを使ってOK。
 
