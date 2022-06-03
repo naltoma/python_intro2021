@@ -98,7 +98,7 @@ False
 ---
 ## 辞書
 ### 辞書の基本操作
-**辞書型オブジェクト(dictionary; dict)** も順序付けられていない集合である。[辞書型オブジェクト](https://docs.python.org/ja/3/library/stdtypes.html#mapping-types-dict)では **鍵(key)と値(value)のペア** で1つの要素を管理する。例えば「プログラミング1は金曜1限目」「プログラミング演習1は金曜2限目」（講義名と開催スケジュールというペア）というように、「同種類の異なる鍵とそれに対応するな値」を列挙して利用したい場合に用いることが多いデータ型である。
+**辞書型オブジェクト(dictionary; dict)** も順序付けられていない集合である。[辞書型オブジェクト](https://docs.python.org/ja/3/library/stdtypes.html#mapping-types-dict)では **鍵(key)と値(value)のペア** で1つの要素を管理する。例えば「プログラミング1は金曜1限目」「プログラミング演習1は金曜2限目」（講義名と開催スケジュールというペア）というように、「同種類の異なる鍵とそれに対応する値」を列挙して利用したい場合に用いることが多いデータ型である。
 
 コードの具体例を眺めてみよう。以下は「アカウントe215700の点数は100点」「e175799の点数は50点」「key=123のvalueは'hoge'」という3つの要素を持つ辞書型オブジェクトを用意し、要素参照・値変更・存在しないkeyの参照・新しいkeyの登録をやっている例だ。
 
@@ -215,10 +215,10 @@ Jan
 - step 2: 要素「key='tuesday', value=20」を追加。
 - step 3: 要素数を確認。
 - step 4: key一覧を確認。
-- step 4: key='monday'の値を確認。
-- step 5: key='tuesday'の値を30に変更。
-- step 6: key='wednesday'を参照。(エラーになることを確認)
-- step 7: in演算子で key='wednesday' を検索。
+- step 5: key='monday'の値を確認。
+- step 6: key='tuesday'の値を30に変更。
+- step 7: key='wednesday'を参照。(エラーになることを確認)
+- step 8: in演算子で key='wednesday' を検索。
 
 ````{dropdown} 回答例
 ```python
