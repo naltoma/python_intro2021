@@ -56,7 +56,7 @@ filename = 'target.txt'
 with open(filename, 'r') as fh:
     line_no = 1
     for line in fh.readlines():
-        print('{}行目の中身: type={}, value={}'.format(line_no,type(line),line))
+        print(f'{line_no}行目の中身: type={type(line)}, {line=}')
         line_no += 1
 print('ファイル読み込み終了')
 ```
@@ -69,7 +69,8 @@ print('ファイル読み込み終了')
     - 読み込んだ行数を表示するための変数を用意している。これは行数をカウントする必要がある場合だけ記述する。
   - 4行目: ``for line in fh.readlines():``
     - ファイルハンドラから「1行を1str型オブジェクト」「そのstr型オブジェクトを要素として持つリスト」として読み込む。この要素を変数lineに保存した上で、forブロックで処理していく。
-  - 5行目: ``print('{}行目の中身: {}'.format(line_no, line))``
+  - 5行目: ``print(f'{line_no}行目の中身: type={type(line)}, {line=}')``
+    - [フォーマット済み文字リテラル(f-stringとも呼ぶ)](https://docs.python.org/ja/3.8/tutorial/inputoutput.html#formatted-string-literals)による出力。
     - ちゃんと読み込めてることを確認するために、出力しているだけのコード例。何もない空の行も出力されていることに注意しよう。これは「行末ある改行文字」もそのまま読み込んでいるため。改行文字を取り除きたいなら [str.rstrip()](https://docs.python.org/ja/3/library/stdtypes.html?highlight=split#str.rstrip) を使おう。
   - 6行目: ``line_no += 1``
     - 行番号を更新。
