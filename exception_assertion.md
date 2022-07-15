@@ -79,11 +79,11 @@ def calc_ratio2(num_success, num_failures):
         print('失敗回数0のため、success/failuer比は定義できません。')
     print('Now here')
 
-calc_ratio(5, 1)
+calc_ratio2(5, 1)
 # -> success_failure_ratio = 5.0
 # -> Now here
 
-calc_ratio(5, 0)
+calc_ratio2(5, 0)
 # -> 失敗回数0のため、success/failuer比は定義できません。
 # -> Now here
 ```
