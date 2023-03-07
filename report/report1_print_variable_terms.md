@@ -76,32 +76,33 @@ TypeError: can only concatenate str (not "int") to str
 <hr>
 
 ## レベル4「用語を整理しよう」
-- 教科書2.1節〜2.1.2節に出てくる以下の用語（Glossary）について、関連の深い用語同士をまとめることでいくつかのグループに分類、もしくは紐付けよ。
-  - 例えば、英単語の car, plane は「移動するための機械」という点で類似している。また mobile phone, iPhone は上位下位関係もしくは包含関係（iPhoneはmobile phoneの一種）にある。他にも「こう関連している」という理由は様々考えられるだろう。自由で構わない（正解である必要はない）ので、現時点での自分なりの解釈で分類してみよう。後日誤りに気づいたらその時点で更新すると良いだろう。
+- 教科書2.1節〜2.1.2節に出てくる以下の用語（Glossary）について、関連の深い用語同士をまとめることでいくつかのグループに分類、もしくは何らかの方法で整理せよ。
+  - 例えば、英単語の car, plane は「移動するための機械」という点で類似している。また mobile phone, iPhone は上位下位関係もしくは包含関係（iPhoneはmobile phoneの一種）にある。他にも「こう関連している」という理由は様々考えられるだろう。自由で構わない（正解である必要はない）ので、現時点での自分なりの解釈で分類（or整理）してみよう。後日誤りに気づいたらその時点で更新すると良いだろう。
 - 補足
   - グループ数は2個以上10個以内とする。用語を1個しか含まないグループがあっても良い。
   - レポートには、分類結果とそのように分類した理由（グループごとの共通項等）について報告すること。分類結果の記載方法は問わないが、見やすくなるよう工夫すること。
 - 用語
-  1. program
-  1. script
-  1. shell
-  1. command
-  1. statement
-  1. objects
-  1. type
-  1. scalar objects
-  1. non-scalar objects
-  1. literals
-  1. int (integers)
-  1. float (floating point numbers)
-  1. bool (Boolean values)
-  1. operators
-  1. expressions
-  1. value
-  1. shell prompt
-  1. variables
-  1. reserved words
-  1. comments
+  1. プログラム (program)
+  1. スクリプト (script)
+  1. シェル (shell)
+  1. 命令 (command)
+  1. 文またはステートメント (statement)
+  1. オブジェクト (object)
+  1. 型 (type)
+  1. スカラ (scalar)
+  1. 非スカラ (non-scalar)
+  1. リテラル (literal)
+  1. 整数型, 整数, int (integers)
+  1. 実数型, 実数または浮動小数点, float (floating point numbers)
+  1. ブール型, 真偽値, bool (Boolean values)
+  1. 演算子 (operator)
+  1. 式 (expression)
+  1. 値 (value)
+  1. シェルプロンプト (shell prompt)
+  1. 変数 (variable)
+  1. 代入 (assignment)
+  1. 予約語 (reserved word)
+  1. コメント (comment)
 
 <hr>
 
