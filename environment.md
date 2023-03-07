@@ -39,19 +39,19 @@
 ---
 ## 開発環境
 ### 冒頭1〜2週目の環境
-- macOS: 12.x以降想定。@ 2022.3.7
-  - 恐らく 11.x系でも問題ない。
+- macOS: 13.x以降想定。@ 2023.3.7
+  - 恐らく 11.x以降で問題ない。
 - ターミナル.app
 - Python: 3.9系想定。恐らく3.8系でも問題ない。
-- (参考)テキストエディタ: [ATOM](https://atom.io)
-  - テキストエディタは他アプリでもOK。テキストエディタが何なのか分からない人はATOMインストールしよう。
+- (参考)テキストエディタ: [CotEditor](https://coteditor.com)
+  - テキストエディタは他アプリでもOK。VSCodeでもOK。テキストエディタが何なのか分からない人はCotEditorインストールしよう。
 - パッケージ管理ツール: conda (miniconda)
   - インストール手順
     - [Mniconda](https://docs.conda.io/en/latest/miniconda.html)からインストール用スクリプトをダウンロード。macOSなら「macOS installers」から選択。
-      - Python version: ``Python 3.8``
+      - Python version: ``Python 3.10``
       - Name: ``Miniconda3 macOS Apple M1 ARM 64-bit bash``
-    - ターミナルを起動し、ダウンロードしたスクリプトを実行。以下は実行例。ファイル名は自身がダウンロードしたファイル名に修正すること。
-      - ``bash ~/Downloads/Miniconda3-py38_4.10.1-MacOSX-arm64``
+    - ターミナルを起動し、ダウンロードしたスクリプトを実行。以下は実行例。**ファイル名は自身がダウンロードしたファイル名に修正** すること。
+      - ``bash ~/Downloads/Miniconda3-py310_23.1.0-1-MacOSX-arm64.sh``
       - 途中で何度か質問されるので適切に答えよう。
         - 確認1: In order to continue the installation process, please review the license agreement. Please, press ENTER to continue
           - ENTERキー押そう。
@@ -73,7 +73,7 @@
 ---
 ### 2〜3週目以降
 - VSCode
-  - PDF: <a href="http://ie.u-ryukyu.ac.jp/~tnal/2022/prog1/vscode2022.pdf" target="_blank">VSCodeのインストールから実行まで</a>
+  - PDF: <a href="http://ie.u-ryukyu.ac.jp/~tnal/2022/prog1/vscode2023.pdf" target="_blank">VSCodeのインストールから実行まで</a>
   - [デバッグ](./debug)
 - 再履修生は PyCharm 等使いたいものを使ってOK。
 
