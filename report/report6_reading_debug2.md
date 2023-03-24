@@ -1,7 +1,7 @@
 # 課題レポート6: コード読解
 
 ## 課題概要
-- 迷路生成プログラム <a href="../samples/generate_maze.py" target="_blank">generate_maze.py</a> を読んでみよう。
+- 迷路生成プログラム <a href="../assets/samples/generate_maze.py" target="_blank">generate_maze.py</a> を読んでみよう。
   - まずは上記ファイル（generate_maze.py）を作業ディレクトリにダウンロードせよ。
   - curlコマンドを使う場合
   ```shell
