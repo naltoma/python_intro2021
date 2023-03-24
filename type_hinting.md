@@ -1,11 +1,11 @@
 # 型ヒント
 
 ## 背景
-標準関数や第三者が提供しているモジュールの多くはAPIドキュメントが用意されており、それを読めば使い方が分かる。これに対し自作した関数にはAPIドキュメントがなく、第三者はコードを読まないと分からないし、場合によっては読んでも良く分からないかもしれない。第三者に対し設計意図や使い方等を伝えやすくするための工夫が **型ヒント(type hints, type hinting)**, **docstringドキュメント**, **doctestによるテスト** だ。
+標準関数や第三者が提供しているモジュールの多くはAPIドキュメントが用意されており、それを読めば使い方が分かる。これに対し自作した関数にはAPIドキュメントがなく、第三者はコードを読まないと分からないし、場合によっては読んでも良く分からないかもしれない。第三者に対し設計意図や使い方等を伝えやすくするための工夫が **{index}`型ヒント<かたひんと-型ヒント>`({index}`type hints`, {index}`type hinting`)**, **{index}`docstringドキュメント`**, **{index}`doctest`によるテスト** だ。
 
 ---
 ## 型ヒント
-あなたは[str.split](https://docs.python.org/ja/3.8/library/stdtypes.html#str.split)のAPI ``str.split(sep=None, maxsplit=-1)`` だけを見て、第1引数sepに何を設定するのか、戻り値が何なのかがすぐに分かるだろうか。その後の解説文や使用例まで眺めると想像できるが、def文からも補足したい。このような場合に使うのが **型ヒント(type hinting)** だ。
+あなたは[{index}`str.split関数`](https://docs.python.org/ja/3.8/library/stdtypes.html#str.split)のAPI ``str.split(sep=None, maxsplit=-1)`` だけを見て、第1引数sepに何を設定するのか、戻り値が何なのかがすぐに分かるだろうか。その後の解説文や使用例まで眺めると想像できるが、def文からも補足したい。このような場合に使うのが **{index}`型ヒント<かたひんと-型ヒント>`({index}`type hinting`)** だ。
 
 ---
 ## 型ヒントの例
@@ -54,12 +54,12 @@ def calc_triangle_area(height: Union[int, float],
     return height * width / 2
 ```
 
-上記の ``from typing import Union`` は[標準モジュール typing の Union 型](https://docs.python.org/ja/3.8/library/typing.html#typing.Union)を読み込んでいる。これを用いて型ヒントは ``Union[int, float]`` と記述しており、これでint型もしくはfloat型であることを示している。Union型は ``Union[X, Y, Z]`` のように記述することで「X, Y, Zのいずれか」のように「または」や「いずれか」を表すために用いられる。
+上記の ``from typing import Union`` は[標準モジュール typing の {index}`Union 型`](https://docs.python.org/ja/3.8/library/typing.html#typing.Union)を読み込んでいる。これを用いて型ヒントは ``Union[int, float]`` と記述しており、これでint型もしくはfloat型であることを示している。Union型は ``Union[X, Y, Z]`` のように記述することで「X, Y, Zのいずれか」のように「または」や「いずれか」を表すために用いられる。
 
 ```{note}
 型ヒントは文字通りヒントに過ぎない。ヒントと異なる型を与えた場合でも実行できてしまう点に注意しよう。（確認してみよう）
 ```
 
 ```{tip}
-リスト型や辞書型を使うには [typing.List](https://docs.python.org/ja/3.8/library/typing.html#typing.List), [typing.Dict](https://docs.python.org/ja/3.8/library/typing.html#typing.Dict) を参考にしてみよう。
+リスト型や辞書型を使うには [typing.List](https://docs.python.org/ja/3.10/library/typing.html#typing.List), [typing.Dict](https://docs.python.org/ja/3.10/library/typing.html#typing.Dict) を参考にしてみよう。
 ```

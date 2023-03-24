@@ -40,15 +40,19 @@ parts:
   - file: report/report3_iteration.md
   - file: report/report4_list_dict_nlp.md
   - file: report/report5_list_dict_nlp2.md
-  - file: report/report6_reading_debug.md
+  - file: report/report6_reading_debug2.md
   - file: report/report7_search.md
 - caption: "モブプロ演習"
   numbered: true
   chapters:
   - file: exercise/ex1.md
   - file: exercise/ex2.md
+  - file: exercise/mini_ex.md
   - file: exercise/ex3.md
   - file: exercise/ex4.md
   - file: exercise/ex5.md
   - file: exercise/ex6.md
   - file: exercise/ex7.md
+- caption: "付録"
+  chapters:
+  - file: genindex

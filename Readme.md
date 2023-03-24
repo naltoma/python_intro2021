@@ -1,7 +1,7 @@
 # プログラミング1
 - 琉大知能情報コース
-  - [2022年度「プログラミング1」](https://ie.u-ryukyu.ac.jp/~tnal/2022/prog1/)
-  - [JupyterBook版](http://ie.u-ryukyu.ac.jp/~tnal/2022/prog1/static/)
+  - [2023年度「プログラミング1」](https://ie.u-ryukyu.ac.jp/~tnal/2023/prog1/)
+  - [JupyterBook版](http://ie.u-ryukyu.ac.jp/~tnal/2023/prog1/static/)
 - 想定対象
   - プログラミング触ったこと無い大学1年生。
 - 主な内容
@@ -18,6 +18,6 @@
     - [20歳を過ぎてからプログラミングを学ぼうと決めた人たちへ](http://www.slideshare.net/ShuUesugi/20-9290892)
     - [progate](https://prog-8.com/)　＊独習サイト
   - 2週目
-    - [Python公式ドキュメント](https://docs.python.org/3.8/)
+    - [Python公式ドキュメント](https://docs.python.org/3.10/)
     - [公式ドキュメントの評価順序、優先順位](https://docs.python.org/ja/3/reference/expressions.html#evaluation-order)
     - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html#s3.16-naming)

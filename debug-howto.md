@@ -4,7 +4,7 @@
 ---
 ## 事前準備1: 正規表現入門
 - 正規表現とは
-  - 「正規表現（せいきひょうげん、英: regular expression）とは、文字列の集合を一つの文字列で表現する方法の一つ」 by [Wikipedia:正規表現](https://ja.wikipedia.org/wiki/正規表現)
+  - 「{index}`正規表現<せいきひょうげん-正規表現>`（せいきひょうげん、英: {index}`regular expression`）とは、文字列の集合を一つの文字列で表現する方法の一つ」 by [Wikipedia:正規表現](https://ja.wikipedia.org/wiki/正規表現)
 
 ---
 ### 例: 郵便番号
@@ -18,7 +18,7 @@
   - ただし、これでは「903-0213」のみの対応。これに加えて、「9030213」にも対応させたい。これは、「数字3桁の後にハイフンが0回以上1回未満出現する」と表現することで対応できる。
     - 具体的には ``[0-9]{3}-{0,1}[0-9]{4}`` となる。
 - 他に記述できる表記一覧
-  - [re --- 正規表現操作](https://docs.python.org/ja/3/library/re.html)
+  - [{index}`reモジュール` --- 正規表現操作](https://docs.python.org/ja/3/library/re.html)
 
 ```python
 import re # 正規表現モジュールreを読み込む
@@ -111,13 +111,13 @@ curl -O https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
         - ``+`` は、その直前のパターンを1度以上繰り返すこと。
         - ``\.`` は、``.`` を含むこと。``.`` という文字が正規表現では特殊文字（改行以外の任意の一文字）であるため、その特殊な意味を発動させず文字として扱うために ``\`` を使って表現している。
         - ``.+`` は、改行以外の任意の1文字を1回以上繰り返すこと。
-      - 今回は、上記パターンの「冒頭からカンマの前まで」を抽出したい。この場合、抽出したい箇所を丸括弧で囲い、[re.match()](https://docs.python.org/ja/3/library/re.html#re.Pattern.match)を使うことで抽出することができる。（下記コード例参照）
+      - 今回は、上記パターンの「冒頭からカンマの前まで」を抽出したい。この場合、抽出したい箇所を丸括弧で囲い、[{index}`re.match関数`](https://docs.python.org/ja/3/library/re.html#re.Pattern.match)を使うことで抽出することができる。（下記コード例参照）
         - まず、``re.match(正規表現, strオブジェクト)`` によりマッチングを実施する。その結果はマッチオブジェクトとして返される。
         - 返されたマッチオブジェクトに対して ``re.group()`` を使うと、
           - ``re.group(0)`` により、マッチした文字列全体を抽出。
           - ``re.group(1)`` により、1番目に指定した文字列。
           - ``re.group(2)`` 以降も同様。今回は1箇所しか指定していないため、2番目以降は該当なし。
-  - [re.compile()](https://docs.python.org/ja/3/library/re.html#re.compile)は、パターンマッチングを高速に実行するための関数。高速にするだけなので、使わなくても良い。
+  - [{index}`re.compile関数`](https://docs.python.org/ja/3/library/re.html#re.compile)は、パターンマッチングを高速に実行するための関数。高速にするだけなので、使わなくても良い。
   - readlinesを使わずにfor文を回しているが、ファイルサイズが大きい場合にはこちらの書き方の方がベター。readlinesでは、ファイル内のすべての行を一度に読み込み保持するため、メモリを逼迫することがある。
 
 ```python
@@ -153,11 +153,11 @@ AttributeError: 'NoneType' object has no attribute 'group'
   - エラーが出た箇所に関するドキュメントを参照したり、エラーが出た変数の型を確認することでバグ要因を特定してみる。
   - 本来はエラー文を解釈してから探し始めるのが良いが、ここではまだ使い慣れていないライブラリの利用を含んだ例になっているため、ドキュメント参照から始めている。
 - step 1: ドキュメントを参照してみる。
-  - [Python標準ライブラリ](https://docs.python.org/ja/3/library/)の検索窓から、検索キーを入力して探してみよう。「group」や「re」が該当する。
+  - [{index}`Python標準ライブラリ`](https://docs.python.org/ja/3/library/)の検索窓から、検索キーを入力して探してみよう。「group」や「re」が該当する。
     - キーワード候補としては、まずエラー文に出てくる「group」が考えられる。また、groupは正規表現（reライブラリ）にも関連していることが分かっている。このことを踏まえて検索結果を眺めていくと、 [re.Match.group](https://docs.python.org/ja/3/library/re.html?highlight=group#re.Match.group) が今回の対象になっていそうだと推測できる。
   - re.Match.groupのページには、その使い方は説明されているが、NoneType に関する説明は出てこない。
 - step 2: エラー文を解釈してみる。
-  - ``AttributeError: 'NoneType' object has no attribute 'group'`` の主語は「NoneType object」である。何か良くわからないが、NoneType型のオブジェクトがあり、そのオブジェクトが group を持っていないというエラーになっている。
+  - **{index}`AttributeError`: 'NoneType' object has no attribute 'group'** の主語は「NoneType object」である。何か良くわからないが、NoneType型のオブジェクトがあり、そのオブジェクトが group を持っていないというエラーになっている。
   - エラーが出た行から考えると、group関数を実行使用している変数は result である。このresultには、直前の行でマッチした結果（マッチオブジェクト）が保存されているはずだが、そこがおかしいのだろうか？
     - この推測を確認するため、re.match() についてドキュメントで確認してみよう。
 - step 2: ドキュメントを参照してみる。その2。

@@ -1,6 +1,7 @@
 # Numpyを使ったベクトル・行列演算入門
 
 ## Numpyのインストール
+新入生はインストール大会でインストール済みのはずです。
 - 2021年度学生
   - ``source ~/.venv/prog1/bin/activate``
   - ``pip install numpy``
@@ -9,8 +10,8 @@
 
 ---
 ## 共通した流れ
-- Step1: Numpyモジュールを読み込む
-- Step2: 演算したいデータ（ベクトルor行列）をnumpy.ndarray型オブジェクトとして表現する。
+- Step1: {index}`Numpy`モジュールを読み込む
+- Step2: 演算したいデータ（ベクトルor行列）を{index}`numpy.ndarray型`オブジェクトとして表現する。
 - Step3: 演算する。
 
 ---

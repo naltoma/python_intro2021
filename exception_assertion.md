@@ -4,16 +4,16 @@
 ---
 ## 概要
 - exceptionsやassertionsを効果的に使うことで、開発者・利用者に対する情報提供や、defensive programmingを実現できる。
-- **exceptions**: 例外
+- **{index}`exceptions`**: {index}`例外<れいがい-例外>`
   - 一般的には「通常起きない何か」を例外と呼ぶ。プログラムではどこでも起こりうる。
   - Pythonの標準ライブラリ（四則演算, 代入, 比較, if文, for文,,,等あらゆる標準機能）においても利用されている。
     - 良く見る例外: IndentationError, IndexError, TypeError, NameError, ValueError, ZeroDivisionError
       - Tips: エラーは開発者に対する情報提供。エラーが出たらどういう意味か読み取ろう。
       - エラーは例外の一種。エラーだけが例外ではない。
       - [組み込み例外](https://docs.python.org/ja/3/library/exceptions.html) by 公式ドキュメント
-- **assertions**: 表明、断言、アサート、アサーション
+- **{index}`assertions`**: 表明、断言、アサート、{index}`アサーション<あさーしょん-アサーション>`
   - 関数や手続きが「前提として想定していること」を明示するために用いる。簡易的なテストと捉えても良い。
-- 関連: **warnings（警告)**
+- 関連: **{index}`warnings`（警告)**
   - [警告の制御](https://docs.python.org/ja/3/library/warnings.html) by 公式ドキュメント
     - 「警告メッセージは一般に、ユーザに警告しておいた方がよいような状況下にプログラムが置かれているが、その状況は (通常は) 例外を送出したりそのプログラムを終了させるほどの正当な理由がないといった状況で発されます。例えば、プログラムが古いモジュールを使っている場合には警告を発したくなるかもしれません。」
 
@@ -31,12 +31,12 @@ IndexError: list index out of range
 
 - UNIX用語: 標準入力・標準出力・標準エラー出力
   - UNIXにおける標準で用意されているテキスト・ストリーム。
-  - stdin: 標準入力。ここではターミナル上で操作された入力のこと。
-  - stdout: 標準出力。ターミナル上への出力。print()のデフォルト出力先。
-  - stderr: 標準エラー出力。デフォルトではターミナル上への出力。
+  - {index}`stdin`: 標準入力。ここではターミナル上で操作された入力のこと。
+  - {index}`stdout`: 標準出力。ターミナル上への出力。print()のデフォルト出力先。
+  - {index}`stderr`: 標準エラー出力。デフォルトではターミナル上への出力。
   - 参考
     - [UNIXの標準入出力とリダイレクション](http://www.rsch.tuis.ac.jp/~ohmi/literacy/stdio.html)
-- **IndexError: list index out of range**
+- **{index}`IndexError`: list index out of range**
   - Exeptionの一種。list型オブジェクトに対して、範囲外(out of range)のインデックスにアクセスしようとしたために起きた(raise)。
   - （という情報を開発者に提供するために例外という機能が利用されている）
 - 例外が起きたら、
@@ -108,7 +108,7 @@ except:
 ---
 ### polymorphicなコード
 - Polymorphism <-> Monomorphism
-  - Polymorphism: ポリモーフィズム、多態性、多相性、多様性。
+  - {index}`Polymorphism`: {index}`ポリモーフィズム<ぽりもーふぃずむ-ポリモーフィズム>`、多態性、多相性、多様性。
     - 詳細は後記の授業プログラミング2でやります。今回は紹介のみ。
   - Monomorphism: モノモーフィズム、単態性、単相性。
 - 次のコード「例3-1」は、古典的な関数や手続き（単態性なコード）の例。
@@ -167,10 +167,10 @@ print(data)
 ### フロー制御として利用される例外
 例外は日常的に利用されている。例えば、関数実行時に何か問題が発生した際、どのような問題が発生したのかを伝えるために戻り値を利用することが多い。
 
-Pythonでは**raise**文を用いることで例外を強制的に発生させることができる。その関数や手続きの開発者・利用者に対する助言を提示するために使われることが多い。
+Pythonでは **{index}`raise文`** を用いることで例外を強制的に発生させることができる。その関数や手続きの開発者・利用者に対する助言を提示するために使われることが多い。
 
 ```{tip}
-- ``nan (Not a Number)``: [math.nan](https://docs.python.org/3/library/math.html?highlight=nan#math.nan)
+- ``nan (Not a Number)``: [{index}`math.nan`](https://docs.python.org/3/library/math.html?highlight=nan#math.nan)
   - 数値演算結果が定義できない場合（0除算等）でも、int型もしくはfloat型を返したい（値はともかく、型を揃えたい）場合に用いることが多い。
 ```
 
@@ -211,10 +211,10 @@ print(get_ratios([1.0, 2.0], [3.0]))
 
 ---
 ## アサーション
-- Assertions (アサーション)
+- {index}`Assertions` ({index}`アサーション<あさーしょん-アサーション>`)
   - 強いて訳すなら「表明、断定」だが、通常は日本語でもアサーションとカタカナ表記されることが多い。
   - 関数や手続きが「前提として想定していること」を明示するために用いる。簡易的なテストと捉えても良い。引数が想定通りであることをチェックするために用いられることが多いが、これはuseful defensive programming toolの例。
-  - もしアサーションに遭遇したら、指定された条件を満足しているか評価され、満足している(True)ならそれ以降の処理に進む。満足していない(False)なら、**AssertionError**が生じ、プログラム実行を停止する。
+  - もしアサーションに遭遇したら、指定された条件を満足しているか評価され、満足している(True)ならそれ以降の処理に進む。満足していない(False)なら、**{index}`AssertionError`**が生じ、プログラム実行を停止する。
 - assert文の書式
   - ``assert 評価式``
   - ``assert 評価式, 引数``: 引数にエラー文を指定しておくと、raiseと同じ使い方ができる。

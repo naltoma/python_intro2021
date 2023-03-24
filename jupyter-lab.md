@@ -3,13 +3,14 @@
 ## Jupyter Lab とは？
 - [公式サイト](http://jupyter.org)
   - JupyterLab is a web-based interactive development environment for Jupyter notebooks, code, and data.
-  - ノート、コード、実行結果等を一つのノートにまとめることができる「インタラクティブな開発環境」。
-- Jupter Notebook vs JupyterLab
+  - {index}`Jupyter Lab`とは、ノート、コード、実行結果等を一つのノートにまとめることができる「インタラクティブな開発環境」。
+- {index}`Jupter Notebook` vs JupyterLab
   - 厳密には異なるもの。元々はNotebookが安定版として広く使われていて、Labは拡張を含む開発版というニュアンスが強かった。特に大きな違いは「LabはNotebookを内包する次世代UI」として開発されていること。
   - 単にインタラクティブなノートとして使うだけならばNotebookでも十分。今回は拡張版であるLabを使ってみよう。
 
 ---
 ## インストール
+新入生はインストール大会でインストール済みのはずです。PC故障等で環境を自身で構築し直した人は、インストールしておいてください。
 - 2021年度学生（事前に動作確認した人は不要）
   - ``source ~/.venv/prog1/bin/activate``
   - ``pip install jupyterlab``
@@ -29,7 +30,7 @@ curl -O https://ie.u-ryukyu.ac.jp/~tnal/2021/prog1/static/samples/jupyter_exampl
     - ブラウザで「JupyterLab」タイトルが見え、実行したディレクトリの一覧が表示されてるなら、正常に起動している。これ以降はブラウザ内で操作する。
 - サンプルファイルを操作してみる。
   - ダウンロードしたファイル「jupyter_example.ipynb」を開こう。
-    - Jupyterではセル（Cell）と呼ばれる論理構造でノートを編集していく。ダウンロードしたノート例は5つの「Cell」で構成されている。
+    - Jupyterでは{index}`セル<せる-セル>`（{index}`Cell`）と呼ばれる論理構造でノートを編集していく。ダウンロードしたノート例は5つの「Cell」で構成されている。
       - 1つ目, 4つ目のCell: Markdown形式のテキスト。Markdown cell。
         - [Markdownとは](http://www.markdown.jp/what-is-markdown/)
       - 2,3,5つ目のCell(灰色背景): Python3で実行可能なコード。Code cell。
