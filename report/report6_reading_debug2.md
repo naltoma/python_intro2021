@@ -5,7 +5,7 @@
   - まずは上記ファイル（generate_maze.py）を作業ディレクトリにダウンロードせよ。
   - curlコマンドを使う場合
   ```shell
-  curl -O https://ie.u-ryukyu.ac.jp/~tnal/2023/samples/generate_maze.py
+  curl -O https://ie.u-ryukyu.ac.jp/~tnal/2023/prog1/static/samples/generate_maze.py
   ```
 - 達成目標
   - 他人が書いたコードを読んでみよう。
