@@ -82,6 +82,45 @@ print(scores[4]) # IndexError: list index out of range
 上記の例で ``scores[4]`` を参照しようとすると「{index}`IndexError`: list index out of range」という応答が返ってくる。これは指定したリストscoresの範囲外のインデックス4が指定されたというエラーだ。scoresは4つの要素を持つリストであるが、各要素は0番目から数えるため最後は3番目までしか存在していない。そのため4番目を指定すると IndexError となる。
 ```
 
+`````{admonition} 検討1
+3つの課題に対する採点結果を ``scores = [50, 100, 80]`` として用意したとしよう。このリストを引数として受け取り、総合得点を求める関数を実装してみよう。関数名を get_total_score とする。
+````{dropdown} 回答例
+```python
+def get_total_score(scores):
+    result = 0 # 総合得点を保存しておくための変数。初期値は0。
+    for score in scores:
+        result += score
+    return result
+
+#動作確認
+scores = [50, 100, 80]
+print(get_total_score(scores))
+print(get_total_score([1, 2, 3]))
+```
+````
+`````
+
+`````{admonition} 検討2
+3つの課題に対する採点結果を ``scores = [50, 100, 80]`` として用意したとしよう。このリストを引数として受け取り、平均点を求める関数を実装してみよう。関数名を get_average_score とする。
+````{dropdown} 回答例
+```python
+def get_average_score(scores):
+    total = 0 # 総合得点を保存しておくための変数。初期値は0。
+    count = 0  # 何回分の点数が保存されていたかをカウントするための変数。初期値は0。
+    for score in scores:
+        total += score
+        count += 1
+    result = total / count
+    return result
+
+#動作確認
+scores = [50, 100, 80]
+print(get_average_score(scores))
+print(get_average_score([1, 2, 3]))
+```
+````
+`````
+
 ---
 ## while文の考えかた
 ```{figure} ./figs/while1.svg
