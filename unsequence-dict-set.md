@@ -151,7 +151,7 @@ for文のシーケンス集合指定のように「in dict」として辞書型�
 
 - 対策例
   - 順番を指定したいなら、指定順通りに並べた（ソートした）keyシーケンス集合を用意し、そのkeyシーケンス集合を指定して反復処理する。
-  - 順序付き辞書[OrderedDict](https://docs.python.org/ja/3.8/library/collections.html#collections.OrderedDict)を使う。
+  - 順序付き辞書[OrderedDict](https://docs.python.org/ja/3.8/library/collections.html#collections.OrderedDict)を使う。なお、[Python 3.7以降は dict 自体が順番を保存](https://docs.python.org/ja/3/whatsnew/3.7.html)するようになっています。
 ```
 
 ---
