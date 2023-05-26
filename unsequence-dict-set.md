@@ -296,6 +296,27 @@ keyとvalueのペアで格納するデータ構造を[{index}`ハッシュテー
 ```
 
 ---
+### 検討
+`````{admonition} 検討
+5人分の成績判定結果を ``evaluations = ['A', 'A', 'B', 'F', 'B']`` として保存してるとする。この変数scoreを引数として受け取り、「Aは2人、Bは2人、Fは1人」と集計する関数summaryを実装してみよう。なお評価毎の人数をカウントできていれば出力方法は自由とする。
+````{dropdown} 回答例
+```python
+def summary(evaluations):
+    result = {}
+    for evaluation in evaluations:
+        if evaluation not in result:
+            result[evaluation] = 1
+        else:
+            result[evaluation] += 1
+    return result
+
+evaluations = ['A', 'A', 'B', 'F', 'B']
+print(summary(evaluations))
+```
+````
+`````
+
+---
 ## 復習・予習
 - 復習
   - 適宜過去資料及び教科書を参照しよう。

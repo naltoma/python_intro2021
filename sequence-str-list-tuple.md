@@ -405,6 +405,22 @@ print(squares)
 リスト内包表記を書くことはできなくても構わないが、書かれているコードを読めるようになろう。
 
 ---
+### 検討
+`````{admonition} 検討
+``data = ['a', 'b', 'c']``としてデータを保存しているものとする。このとき、変数dataに文字列'd'が存在するかどうかを確認し、存在しない場合には最後尾に当該文字列を追加するコードを実装してみよう。
+````{dropdown} 回答例
+```python
+data = ['a', 'b', 'c']
+target = 'd'
+if target not in data:
+    data.append(target)
+
+print(f'{data=}')
+```
+````
+`````
+
+---
 ### リスト参考サイト
 - [チュートリアル, リスト型 (list)](http://docs.python.jp/3/tutorial/introduction.html#lists)
 - [チュートリアル, リストの内包表記](http://docs.python.jp/3/tutorial/datastructures.html#list-comprehensions)
