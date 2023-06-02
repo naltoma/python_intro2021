@@ -245,6 +245,48 @@ Got:
   - 今回は全てのテストが通るはずだ。
 
 ---
+## 検討
+
+`````{admonition} 検討
+3つの課題に対する採点結果を``scores = [50, 100, 80]``として用意したとしよう。以下に示す関数get_total_score()は、このリストを受け取ると合計点を返してくれる関数だ。この関数に対し動作を確認するためのdoctestを記述し、テストを実行してみてください。なおテストでは [0, 50] を入力されると 50 が返ってくることを確認してください。
+```Python
+def get_total_score(scores: list[int]) -> int:
+    result = 0
+    for score in scores:
+        result += score
+    return result
+
+if __name__ == "__main__":
+    #動作確認
+    scores = [50, 100, 80]
+    print(get_total_score(scores))
+    print(get_total_score([1, 2, 3]))
+```
+````{dropdown} 回答例
+```python
+def get_total_score(scores: list[int]) -> int:
+    '''
+    >>> get_total_score([0, 50])
+    50
+    '''
+    result = 0
+    for score in scores:
+        result += score
+    return result
+
+if __name__ == "__main__":
+    #動作確認
+    scores = [50, 100, 80]
+    print(get_total_score(scores))
+    print(get_total_score([1, 2, 3]))
+```
+上記を sample.py と保存したなら、
+- 確認方法1: ``python -m doctest sample.py`` として何も出力されないならテストがパスしているはず。
+- 確認方法2: ``python -m doctest sample.py -v`` として具体的なテスト結果が出力され、「1 passed and 0 failed.」となるはず。
+````
+`````
+
+---
 ## 復習・予習
 - 復習
   - 適宜過去資料及び教科書を参照しよう。
