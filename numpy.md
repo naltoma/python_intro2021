@@ -89,6 +89,10 @@ print('固有ベクトル:\n{0}'.format(eigenvectors))
 - 対角行列: ``np.eye()``, ``np.diag()``
 
 ---
+## numpy演習
+Chainerが用意した[8. NumPy 入門](https://tutorials.chainer.org/ja/08_Introduction_to_NumPy.html)に取り組んでください。コードは実際に手元で動かすようにしてください。
+
+---
 ## 参考サイト
 - [Numpy公式チュートリアル](https://docs.scipy.org/doc/numpy/user/quickstart.html)
 - [私訳「暫定的 NumPy チュートリアル」](http://naoyat.hatenablog.jp/entry/2011/12/29/021414) by naoya_t@hatenablog
