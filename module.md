@@ -50,10 +50,10 @@ def initialize_deck() -> list:
             deck.append(card)
     return deck
 
-def shuffle_deck(deck):
+def shuffle_deck(deck: list) -> list:
     random.shuffle(deck)
 
-def get_one_card(deck):
+def get_one_card(deck: list) -> str:
     return deck.pop()
 
 if __name__ == '__main__':
