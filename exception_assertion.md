@@ -210,6 +210,67 @@ print(get_ratios([1.0, 2.0], [3.0]))
 ```
 
 ---
+### 検討課題：例外処理を書いてみよう。
+`````{admonition} 検討課題：例外処理を書いてみよう。
+あなたは、用意したテキストファイルを読み込み何か処理するプログラム（下記）を書いている最中だとします。
+```Python
+# コード書きかけ
+filename = "naltoma.txt"
+with open(filename, "r") as f:
+    for line in f.readlines():
+        print(line)
+```
+- やること
+  - (1) 上記コードは naltoma.txt を読み込む想定で書きました。意図的にこのテキストファイルが存在しない状態で上記コードを実行し、例外として ``FileNotFoundError``が起こることを確認してください。
+  - (2) FileNotFoundError時にプログラムの実行が強制終了するのではなく、例外処理を行い、ファイルが存在しない場合には「naltoma.txtが見つかりません。ファイルを用意してから実行してください。」と出力してから通常終了するようにコードを修正してください。また例外処理が正しく動作する（メッセージ出力して通常終了する）ことを確認してください。
+  - (3) naltoma.txt を用意し、意図的にファイルへの読み込み許可を取り消してください。naltoma.txtの中身は自由で構いません。読み込み許可を取り消すには、例えば ``chmod u-r naltoma.txt`` によりuserからread権限を取り消すことができます。権限を取り消す前と取り消した後とで権限（パーミッション）が変わっていることを、``ls -l`` で確認してください。
+  - (4) 読み込み許可がない状態で改めてプログラムを実行し、例外として ``PermissionError`` が起こることを確認してください。
+  - (5) PermissionError時にプログラムの実行が強制終了するのではなく、例外処理を行い、パーミッションが不適切な場合には「パーミッションを確認し、適切な権限を付与してから実行してください。」と出力してから通常終了するようにコードを修正してください。また例外処理が正しく動作する（メッセージ出力して通常終了する）ことを確認してください。
+
+````{dropdown} (2)の解答例
+```Python
+# (2)の解答例
+filename = "naltoma.txt"
+
+try:
+    with open(filename, "r") as f:
+        for line in f.readlines():
+            print(line)
+except FileNotFoundError:
+    print(f"{filename=}が見つかりません。ファイルを用意してから改めて実行してください。")
+```
+````
+
+````{dropdown} (3)の確認例
+```shell
+(base) oct2021:tnal% ls -l naltoma.txt
+-rw-r--r--  1 tnal  staff  0  6 30 14:36 naltoma.txt
+(base) oct2021:tnal% chmod u-r naltoma.txt
+(base) oct2021:tnal% ls -l naltoma.txt
+--w-r--r--  1 tnal  staff  0  6 30 14:36 naltoma.txt
+```
+````
+
+
+````{dropdown} (5)の解答例
+```Python
+# (5)の解答例
+filename = "naltoma.txt"
+
+try:
+    with open(filename, "r") as f:
+        for line in f.readlines():
+            print(line)
+except FileNotFoundError:
+    print(f"{filename=}が見つかりません。ファイルを用意してから改めて実行してください。")
+except PermissionError:
+    print(f"{filename=}を読み込むことができませんでした。パーミッションを確認し、適切な権限を付与してから実行してください。")
+```
+````
+
+`````
+
+---
 ## アサーション
 - {index}`Assertions` ({index}`アサーション<あさーしょん-アサーション>`)
   - 強いて訳すなら「表明、断定」だが、通常は日本語でもアサーションとカタカナ表記されることが多い。
