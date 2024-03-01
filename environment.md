@@ -42,38 +42,14 @@
 - macOS: 13.x以降想定。@ 2023.3.7
   - 恐らく 11.x以降で問題ない。
 - ターミナル.app
-- Python: 3.9系想定。恐らく3.8系でも問題ない。
-- (参考)テキストエディタ: [CotEditor](https://coteditor.com)
-  - テキストエディタは他アプリでもOK。VSCodeでもOK。テキストエディタが何なのか分からない人はCotEditorインストールしよう。
-- パッケージ管理ツール: conda (miniconda)
-  - インストール手順
-    - [Mniconda](https://docs.conda.io/en/latest/miniconda.html)からインストール用スクリプトをダウンロード。macOSなら「macOS installers」から選択。
-      - Python version: ``Python 3.10``
-      - Name: ``Miniconda3 macOS Apple M1 ARM 64-bit bash``
-    - ターミナルを起動し、ダウンロードしたスクリプトを実行。以下は実行例。**ファイル名は自身がダウンロードしたファイル名に修正** すること。
-      - ``bash ~/Downloads/Miniconda3-py310_23.1.0-1-MacOSX-arm64.sh``
-      - 途中で何度か質問されるので適切に答えよう。
-        - 確認1: In order to continue the installation process, please review the license agreement. Please, press ENTER to continue
-          - ENTERキー押そう。
-        - 確認2: End User License Agreement - Miniconda
-          - ライセンスの中身を確認する画面。問題ないので閉じるために ``q`` を入力しよう。
-        - 確認3: Do you accept the license terms? [yes|no]
-          - ライセンスを受け入れるかの確認。``yes``
-        - 確認4: Miniconda3 will now be installed into this location: /Users/tnal/miniconda3
-          - minicondaのインストール先を確認。実行ユーザのホームディレクトリにminiconda3というディレクトリを作成し、そこにインストールするようになっている。このままで良いので、ENTERキーを押そう。
-        - 確認5: Do you wish the installer to initialize Miniconda3 by running conda init? [yes|no]
-          - conda環境初期化を実行することを確認している。``yes``。
-        - 確認6: ==> For changes to take effect, close and re-open your current shell. <==
-          - conda環境をアクティブにするために、ターミナルを再起動しよう。これでminicondaのインストールが終了。
-  - condaに追加パッケージのインストール。
-    - ターミナル上で以下を実行。
-      - ``conda install numpy matplotlib jupyterlab``
-      - 途中で ``Proceed ([y]/n)?`` と確認されるので、``y`` と入力するか、単にEnterキーを押そう。
+- [インストール大会 2024年度入学生向け](https://ie.u-ryukyu.ac.jp/install_2024/post/mac/mac/)
+  - 上記を参考に、Homebrew, Miniconda, Visual Studio Codeをインストールしよう。
+- Python: 恐らく3.8系でも問題ないが、3.9以上を推奨。
 
 ---
 ### 2〜3週目以降
 - VSCode
-  - PDF: <a href="http://ie.u-ryukyu.ac.jp/~tnal/2022/prog1/vscode2023.pdf" target="_blank">VSCodeのインストールから実行まで</a>
+  - PDF: <a href="http://ie.u-ryukyu.ac.jp/~tnal/2023/prog1/vscode2023.pdf" target="_blank">VSCodeのインストールから実行まで</a>
   - [デバッグ](./debug)
 - 再履修生は PyCharm 等使いたいものを使ってOK。
 
