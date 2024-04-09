@@ -36,7 +36,7 @@ parts:
 - caption: "課題"
   chapters:
   - file: report/report1_print_variable_terms.md
-  - file: report/report2_branching_function.md
+  - file: report/report2_2024.md
   - file: report/report3_iteration.md
   - file: report/report4_list_dict_nlp.md
   - file: report/report5_list_dict_nlp2.md
