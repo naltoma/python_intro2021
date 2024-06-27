@@ -20,6 +20,32 @@
 - 他に記述できる表記一覧
   - [{index}`reモジュール` --- 正規表現操作](https://docs.python.org/ja/3/library/re.html)
 
+```Python
+# 小さな例
+import re # 正規表現モジュールreを読み込む
+target = "e245700" # チェック対象
+pattern = r"e"    # 正規表現（eを含むから始まる文字列であることをチェックしたい）
+result = re.match(pattern, target) # チェック
+if result:
+    print("eから始まっている")
+else:
+    print("eから始まっていない")
+```
+
+````{tip}
+if文の動作について補足します。[re.match関数](https://docs.python.org/ja/3/library/re.html#re.match)は、マッチするならMatchオブジェクトを返し、そうでない場合には None を返します。これまでの if 文の説明では「条件式の判定結果がTrueかどうか」に基づいてブロックを選んでいたはずですが、上記の ``if result:`` はそもそも条件式ではない（MatchオブジェクトかNoneのどちらかが保存されている）ことになります。
+
+これは、[Pythonにおける真偽判定がより詳細に定められており](https://docs.python.org/3/library/stdtypes.html#truth-value-testing)、この手順に伴う動作をしています。この実装を説明すると以下の順序で真偽判定を行います。
+- デフォルトでは与えられたオブジェクトを True として扱う。ただし、
+  - もし、オブジェクトが ``__bool__()`` 関数を持っているならばその戻り値を判定結果とする。
+    - 例えば ``result = 1`` の場合、``result.__bool__()`` には True が保存されています。しかし ``result = 0`` の場合には False が保存されています。
+  - もし、オブジェクト ``__len__()`` 関数があるならばその戻り値に基づいて __bool__() をチェックする。
+
+上記に基づくと、Matchオブジェクトは True として判定されます。しかし None の場合には None.__bool__() がチェックされ、Falseとして判定されます。
+````
+
+
+郵便番号での例。
 ```python
 import re # 正規表現モジュールreを読み込む
 data = ['1', '234-5678', '234567', '9', 'ab3', 'ほげ'] # 検査対象の準備
