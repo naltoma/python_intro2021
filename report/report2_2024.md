@@ -86,7 +86,7 @@ Welcome!
 ```Python
 >>> init_app3(2, 'naltoma') # ユーザ登録が済んでいる例
 ## Welcome naltoma! ##
->>> init_app2(3, '') # ユーザ登録がまだの例
+>>> init_app3(3, '') # ユーザ登録がまだの例
 ### Welcome new player! ###
 ```
 
@@ -184,13 +184,13 @@ $$
     - VSCodeで実行したならば、**VSCode内のターミナル画面のコピペで良い**。以下の例は実行の様子と結果を区別しやすくするためだけに、インタプリタ上で実行しています。
 - 実行例
 ```Python
->>> result = numerical_derivative(f, 4, 0.1)
+>>> result = numerical_differentiation(f, 4, 0.1)
 >>> print(f"{result=:.5f}")
 result=0.25002
 ```
 
 ---
 ### オプション2: 数値微分の考察。
-Level4では $f(x) = \sqrt{x}$ を実装し、オプション1では数値微分を求める関数 numerical_derivative を実装した。しかし numerical_derivative(f, 4, 0.1) の結果は 0.25002 であった。これはあなたの知っている答え（$\sqrt{4} = 2$）とは異なるはずだ。
+Level4では $f(x) = \sqrt{x}$ を実装し、オプション1では数値微分を求める関数 numerical_differentiation を実装した。しかし numerical_differentiation(f, 4, 0.1) の結果は 0.25002 であった。これはあなたの知っている答え（$\sqrt{4} = 2$）とは異なるはずだ。
 
 このことについてオプション1で示した参考サイトや文献、他Webページ等を調査し、何故ここまで異なる値が出るのか、どうやればより近い値を得ることができるかについて調査し、その結果を報告せよ。
